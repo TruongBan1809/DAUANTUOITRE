@@ -10,7 +10,6 @@ html{
     color: black;
     background-color: white;
     text-rendering: optimizeLegibility;
-
 }
 
 
@@ -18,8 +17,39 @@ html{
 /*------------------------REUSABLE COMPONENT----------------------------------*/
 /*----------------------------------------------------------------------------*/
 
+/* .clearfix::after{
+    content: " ";
+    display: table;
+    clear: both;
+} */
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
+.btn{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    border-style: groove;
+    padding: 15px 20px;
+    margin-top: ;
+    border-width: 1px;
+
+}
+
+h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: 100;
+    display: inline-block;
+}
 /*----------------------------------------------------------------------------*/
 /*--------------------------------HEADER--------------------------------------*/
 /*----------------------------------------------------------------------------*/
@@ -30,19 +60,62 @@ header{
     background-size: cover;
 }
 
-a{
-    width: 100px;
-}
+
 
 .logo{
-    width: 300px;
-    margin-top: -40px;
-    margin-bottom: -80px;
+    width: 230px;
+    margin: -30px 100px -65px -80px;
     /* float: left; */
 }
 
-.main-nav{
+.topBarInLogoArea{
+    /* position: relative; */
+    float: right;
+    margin-top: 50px;
+}
+
+.topBarInLogoArea .topBarInLogoAreaCell{
+    /* position: relative; */
+    /* margin-right: 500px; */
+}
+
+.topBarInLogoArea .topBarInLogoAreaCell .btIconWidget_btWidgetWithText{
+    display: inline-flex;
+    padding-right: 30px;
+    /* position: relative; */
+}
+
+.topBarInLogoArea .topBarInLogoAreaCell .btIconWidget_btWidgetWithText .btIconWidgetContent .btIconWidgetTitle{
+    display: block;
+    font-size: 10px;
     font-weight: 700;
+    /* position: relative; */
+}
+
+.topBarInLogoArea .topBarInLogoAreaCell .btIconWidget_btWidgetWithText .btIconWidgetContent .btIconWidgetText{
+    display: block;
+    font-size: 10px;
+    color: rgba(255,255,255,0.5);
+    /* position: relative; */
+}
+
+.topBarInLogoArea .topBarInLogoAreaCell .btIconWidget_btWidgetWithText .btIconWidgetIcon .bt-bb-Icon-Holder{
+    display: block;
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    /* position: relative; */
+}
+
+/* .fa-facebook-f{
+    color: white;
+    display: block;
+    float: left;
+} */
+
+.main-nav{
+    width: 1140px;
+    margin: 0 auto;
 }
 
 .main-nav li{
@@ -53,5 +126,31 @@ a{
 .main-nav li a{
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.header-highlight{
+    margin-top: 130px;
+}
+
+.bt-bb-align{
+    /* display: grid; */
+    position: relative;
+}
+
+.header-highlight .bt-bb-align .bt-bb-column-inner-content{
+    width: 100%;
+    position: absolute;
+    top: 170;
+    
+}
+
+.header-highlight .bt-bb-align .bt-bb-column-inner-content .bt-bb-content-inner-text h1{
+    font-size: 25px;
+}
+
+.heading-img{
+    width: 500px;
+    display: inline-block;
 }
